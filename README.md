@@ -6,13 +6,6 @@ This project is a simple implementation of a Java RMI (Remote Method Invocation)
 
 The `Server` class in `Server.java` creates a few `Product` objects and a `Cart` object. Each `Product` and the `Cart` are then exported as a stub using `UnicastRemoteObject.exportObject()`. These stubs are bound to a registry which is set up on localhost at port 9100.
 
-The products created are:
-
-- Laptop: An Acer Aspire laptop
-- MobilePhone: A Chingchong Xen mobile phone
-- Charger: A Lenovo Charger
-- PowerBank: A Panasonic PowerBank
-
 The `Admin` and `Customer` clients can look up the product and cart stubs in the registry using their names ("laptop", "mobilePhone", "charger", "powerBank", and "access_cart") and interact with them as if they were local objects.
 
 ## Directory Structure
