@@ -29,7 +29,8 @@ public class Cart implements CartInterface {
                 sb.append("Retail Price: ").append(product.getRetailprice()).append("\n");
                 sb.append("Store Price: ").append(product.getStoreprice()).append("\n\n");
             }
+            sb.append("************************ \n"); 
             return sb.toString();
         }
     }
-}
+} 

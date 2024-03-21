@@ -43,9 +43,3 @@ public class Server {
         }
     }
 }
-
-
-
-// CLI Server - start rmiregistry 9100
-// CLI Server - compile and run
-// CLI Client - compile and run
