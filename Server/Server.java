@@ -18,9 +18,9 @@ public class Server {
             
             // Exporting and binding of Objects to the Registry
             ProductInterface stub_laptop = (ProductInterface) UnicastRemoteObject.exportObject(Laptop, 0);
-			ProductInterface stub_mobilePhone = (ProductInterface) UnicastRemoteObject.exportObject(MobilePhone, 0);
+            ProductInterface stub_mobilePhone = (ProductInterface) UnicastRemoteObject.exportObject(MobilePhone, 0);
             ProductInterface stub_charger = (ProductInterface) UnicastRemoteObject.exportObject(Charger, 0);
-			ProductInterface stub_powerBank = (ProductInterface) UnicastRemoteObject.exportObject(PowerBank, 0);
+            ProductInterface stub_powerBank = (ProductInterface) UnicastRemoteObject.exportObject(PowerBank, 0);
             
             // Exporting and binding of Cart Object to the Registry
             CartInterface stub_cart = (CartInterface) UnicastRemoteObject.exportObject(cart, 0);
@@ -31,7 +31,7 @@ public class Server {
             registry.rebind("laptop", stub_laptop);
             registry.rebind("mobilePhone", stub_mobilePhone);
             registry.rebind("charger", stub_charger);
-			registry.rebind("powerBank", stub_powerBank);
+            registry.rebind("powerBank", stub_powerBank);
             
             // Binding the Cart Object to the Registry
             registry.rebind("access_cart", stub_cart);
